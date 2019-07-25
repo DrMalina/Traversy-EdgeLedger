@@ -27,6 +27,14 @@ p {
 .text-primary {
   color: #93cb52; }
 
+.bg-light {
+  background: #f4f4f4;
+  color: #333; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
 .l-heading {
   font-size: 4rem;
   margin-bottom: .75rem;
@@ -50,6 +58,15 @@ p {
 .py-3 {
   padding: 3rem 0; }
 
+.p-1 {
+  padding: 1.5rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -62,6 +79,13 @@ p {
   .btn-dark {
     background: #333;
     color: #fff; }
+
+.list {
+  margin: .5rem 0;
+  list-style: none; }
+  .list li {
+    padding: .5rem 0;
+    border-bottom: #444 dotted 1px; }
 
 /* Navbar */
 #navbar {
@@ -122,3 +146,19 @@ p {
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem; }
+
+/* Section: Who we are */
+#who {
+  display: flex; }
+  #who div {
+    flex: 1; }
+  #who .who-img {
+    background: url(../../resources/people.jpg) no-repeat center center/cover; }
+
+/* Clients */
+#clients .items {
+  display: flex; }
+  #clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%; }
