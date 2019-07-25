@@ -40,6 +40,11 @@ p {
     color: #333;
 }
 
+.bg-primary {
+ background: #93cb52;
+ color: #fff;
+}
+
 .bg-dark {
     background: #333;
     color: #fff;
@@ -187,16 +192,52 @@ p {
     }
 }
 
-/* Clients */
+/*Section: Clients */
 
 #clients {
     .items {
         display: flex;
-        
+
         img {
             display: block;
             margin: auto;
             width: 60%;
         }
+    }
+}
+
+/* Section: Contact */
+#contact {
+    display: flex;
+
+    .map {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .map, .contact-form {
+        flex: 1;
+    }
+
+    .form-group {
+        margin: .75rem;
+
+        label {
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: .5rem;
+        }
+    }
+
+    input {
+        width: 100%;
+        padding: .5rem;
     }
 }

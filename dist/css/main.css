@@ -31,6 +31,10 @@ p {
   background: #f4f4f4;
   color: #333; }
 
+.bg-primary {
+  background: #93cb52;
+  color: #fff; }
+
 .bg-dark {
   background: #333;
   color: #fff; }
@@ -155,10 +159,31 @@ p {
   #who .who-img {
     background: url(../../resources/people.jpg) no-repeat center center/cover; }
 
-/* Clients */
+/*Section: Clients */
 #clients .items {
   display: flex; }
   #clients .items img {
     display: block;
     margin: auto;
     width: 60%; }
+
+/* Section: Contact */
+#contact {
+  display: flex; }
+  #contact .map {
+    width: 100%; }
+    #contact .map iframe {
+      width: 100%;
+      height: 100%; }
+  #contact .map, #contact .contact-form {
+    flex: 1; }
+  #contact .form-group {
+    margin: .75rem; }
+    #contact .form-group label {
+      display: block; }
+    #contact .form-group input, #contact .form-group textarea {
+      width: 100%;
+      padding: .5rem; }
+  #contact input {
+    width: 100%;
+    padding: .5rem; }
