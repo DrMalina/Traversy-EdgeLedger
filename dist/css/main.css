@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* html {
+    scroll-behavior: smooth;
+} */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +13,11 @@ body {
 
 a {
   text-decoration: none; }
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none; }
 
 p {
   margin: 0.75rem 0; }
@@ -77,12 +85,15 @@ p {
   background: #93cb52;
   padding: .5rem 2rem;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
   .btn:hover {
     background: #7ab436; }
   .btn-dark {
     background: #333;
     color: #fff; }
+    .btn-dark:hover {
+      background: #000; }
 
 .list {
   margin: .5rem 0;

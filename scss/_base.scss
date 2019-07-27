@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +17,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
 }
 
 p {
@@ -82,6 +92,7 @@ p {
     padding: .5rem 2rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
     &:hover {
         background: #7ab436;
@@ -90,6 +101,10 @@ p {
     &-dark {
         background: #333;
         color: #fff;
+
+        &:hover {
+            background: #000;
+        }
     }
 }
 
@@ -150,6 +165,7 @@ p {
         height: 100%;
         width: 100%;
         padding: 0 2rem;
+        
         /* Overlay */
         position: absolute;
         top: 65px;
